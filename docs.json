@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "dark",
+  "theme": "palm",
   "name": "ACC Korea GenAI workshop",
   "colors": {
     "primary": "#16A34A",
