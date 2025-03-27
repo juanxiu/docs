@@ -18,53 +18,48 @@
         ]
       },
       {
-        "group": "모듈1",
+        "group": "1. Amazon S3 버킷 및 knowledge base 설정",
         "pages": [
-          "module_1/s3_bucket",
-          "module_1/kb"
+          "module_1/1-1",
+          "module_1/1-2"
         ]
       },
       {
-        "group": "모듈2",
+        "group": "2. AWS Lambda 함수 설정",
         "pages": [
-          "module_2/lambda"
+          "module_2/2-1"
         ]
       },
       {
-        "group": "모듈3",
+        "group": "3. 에이전트와 액션 그룹 구성",
         "pages": [
-          "module_3/bedrock"
+          "module_3/3-1"
         ]
       },
       {
-        "group": "모듈4",
+        "group": "Amazon Bedrock의 에이전트와 기술 자료 동기화",
         "pages": [
-          "module_4/agent_kb",
-          "module_4/alias"
+          "module_4/4-1",
+          "module_4/4-2"
         ]
       },
       {
-        "group": "모듈5",
+        "group": "설정 테스트",
         "pages": [
-          "module_5/test"
+          "module_5/5-1"
         ]
       },
       {
-        "group": "모듈6",
+        "group": "Cloud9 환경 셋업",
         "pages": [
-          "module_6/cloud9",
-          "module_6/streamlit"
+          "module_6/6-1",
+          "module_6/6-2"
         ]
       },
       {
         "group": "마무리",
         "pages": [
-          "wrap_up"
-        ]
-      },
-      {
-        "group": "참고",
-        "pages": [
+          "wrap_up",
           "reference"
         ]
       }
