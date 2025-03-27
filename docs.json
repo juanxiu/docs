@@ -1,102 +1,78 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mint Starter Kit",
+  "name": "ACC Korea GenAI workshop",
   "colors": {
     "primary": "#16A34A",
     "light": "#07C983",
     "dark": "#15803D"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "tabs": [
-      {
-        "tab": "Guides",
-        "groups": [
-          {
-            "group": "Get Started",
-            "pages": [
-              "introduction",
-              "quickstart",
-              "development"
-            ]
-          },
-          {
-            "group": "Essentials",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/settings",
-              "essentials/navigation",
-              "essentials/reusable-snippets"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API Reference",
-        "groups": [
-          {
-            "group": "API Documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint Examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
+  "favicon": "/Logo (Default).svg",
+  "navigation": [
+    {
+      "group": "Gen AI workshop 소개",
+      "pages": [
+        "introduction/readme",
+        "introduction/genai_workshop"
+      ]
+    },
+    {
+      "group": "모듈1",
+      "pages": [
+        "module_1/s3_bucket",
+        "module_1/kb"
+      ]
+    },
+    {
+      "group": "모듈2",
+      "pages": [
+        "module_2/lambda"
+      ]
+    },
+    {
+      "group": "모듈3",
+      "pages": [
+        "module_3/bedrock"
+      ]
+    },
+    {
+      "group": "모듈4",
+      "pages": [
+        "module_4/agent_kb",
+        "module_4/alias"
+      ]
+    },
+    {
+      "group": "모듈5",
+      "pages": [
+        "module_5/test"
+      ]
+    },
+    {
+      "group": "모듈6",
+      "pages": [
+        "module_6/cloud9",
+        "module_6/streamlit"
+      ]
+    },
+    {
+      "group": "마무리",
+      "pages": [
+        "wrap_up"
+      ]
+    },
+    {
+      "group": "참고",
+      "pages": [
+        "reference"
       ]
     }
+  ],
+  "footerSocials": {
+    "github": "https://github.com/aws-cloud-clubs"
   },
-  "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
-  },
-  "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
-      }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
+  "feedback": {
+    "suggestEdit": true,
+    "raiseIssue": true
   }
 }
