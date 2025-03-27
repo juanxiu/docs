@@ -2,3 +2,28 @@
 title: 'Cloud9 환경(IDE) 구성'
 # description: 'Start building awesome documentation in under 5 minutes'
 ---
+
+## 단계 8 : IDE 생성 및 배포
+1. Cloud9 관리 콘솔을 탐색하세요. 그런 다음 Create Environment 을 선택합니다.
+
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/create_environment.png?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy84NGZjM2M4Zi1mNjA0LTRhNTItYjEwOC0xZTRkZGIyZTlmZDEvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzY4MjYyOH19fV19&Signature=bZ9wfXz3B04CMEomoNK8A99Bu4YpFoqSfB0IZG7i8jh5HyCsRaysLolVOMNGu7faraFUoi-PImuGAqYAdzNkNZb1o9BxgaBQnTL15EFNIfXaeQnRsGRF0lKgtlnLy3AyepE7qwXqtyNsVpRB-LjafBLKb4fZUvGFctzW0KGurpKuuVxz3Ff97jxqaGP2R%7E9YH6MzUjNxx%7EDPBlZsZAsZvhmT46Sp%7En55ywGkAGkqecGsuf3vrjDJNjAHVj2GCU3jGjn3g0u%7EKaplqprUw-MTR%7ERwzISebrIFNMw2N9EFUx%7EENsWuQmdG5JxD6irzhQGS3H8CHwpcp2nGncEi%7E78C7A__" />
+
+
+2. 여기에서는 각 필드에 다음 값을 입력합니다.
+- Name: Bedrock-Environment (원하는 이름 입력)
+- Instance type: t3.small
+- Platform: Ubuntu Server 22.04 LTS
+- Timeout: 1 hour
+
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/ce2.png?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy84NGZjM2M4Zi1mNjA0LTRhNTItYjEwOC0xZTRkZGIyZTlmZDEvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzY4MjYyOH19fV19&Signature=bZ9wfXz3B04CMEomoNK8A99Bu4YpFoqSfB0IZG7i8jh5HyCsRaysLolVOMNGu7faraFUoi-PImuGAqYAdzNkNZb1o9BxgaBQnTL15EFNIfXaeQnRsGRF0lKgtlnLy3AyepE7qwXqtyNsVpRB-LjafBLKb4fZUvGFctzW0KGurpKuuVxz3Ff97jxqaGP2R%7E9YH6MzUjNxx%7EDPBlZsZAsZvhmT46Sp%7En55ywGkAGkqecGsuf3vrjDJNjAHVj2GCU3jGjn3g0u%7EKaplqprUw-MTR%7ERwzISebrIFNMw2N9EFUx%7EENsWuQmdG5JxD6irzhQGS3H8CHwpcp2nGncEi%7E78C7A__" />
+
+
+3. 완료되면 화면 하단의 Create 버튼을 선택하세요. 환경이 가동되는 데 몇 분 정도 걸립니다. 리소스 부족으로 인해 Cloud9을 가동하는 중에 오류가 발생하는 경우 인스턴스 유형으로 t2.micro를 선택하고 다시 시도할 수도 있습니다.
+>이 문서 작성 시점에 Cloud9 환경에는 Python 3.10.12 버전이 있습니다.
+
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/ce3.png?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy84NGZjM2M4Zi1mNjA0LTRhNTItYjEwOC0xZTRkZGIyZTlmZDEvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzY4MjYyOH19fV19&Signature=bZ9wfXz3B04CMEomoNK8A99Bu4YpFoqSfB0IZG7i8jh5HyCsRaysLolVOMNGu7faraFUoi-PImuGAqYAdzNkNZb1o9BxgaBQnTL15EFNIfXaeQnRsGRF0lKgtlnLy3AyepE7qwXqtyNsVpRB-LjafBLKb4fZUvGFctzW0KGurpKuuVxz3Ff97jxqaGP2R%7E9YH6MzUjNxx%7EDPBlZsZAsZvhmT46Sp%7En55ywGkAGkqecGsuf3vrjDJNjAHVj2GCU3jGjn3g0u%7EKaplqprUw-MTR%7ERwzISebrIFNMw2N9EFUx%7EENsWuQmdG5JxD6irzhQGS3H8CHwpcp2nGncEi%7E78C7A__" />
+
+
+4. Cloud9 환경으로 다시 이동한 다음 방금 생성한 Cloud9 옆에 있는 Open 링크를 클릭합니다. 이제 Streamlit 앱을 설정할 준비가 되었습니다!
+
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/environment.png?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy84NGZjM2M4Zi1mNjA0LTRhNTItYjEwOC0xZTRkZGIyZTlmZDEvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzY4MjYyOH19fV19&Signature=bZ9wfXz3B04CMEomoNK8A99Bu4YpFoqSfB0IZG7i8jh5HyCsRaysLolVOMNGu7faraFUoi-PImuGAqYAdzNkNZb1o9BxgaBQnTL15EFNIfXaeQnRsGRF0lKgtlnLy3AyepE7qwXqtyNsVpRB-LjafBLKb4fZUvGFctzW0KGurpKuuVxz3Ff97jxqaGP2R%7E9YH6MzUjNxx%7EDPBlZsZAsZvhmT46Sp%7En55ywGkAGkqecGsuf3vrjDJNjAHVj2GCU3jGjn3g0u%7EKaplqprUw-MTR%7ERwzISebrIFNMw2N9EFUx%7EENsWuQmdG5JxD6irzhQGS3H8CHwpcp2nGncEi%7E78C7A__" />
