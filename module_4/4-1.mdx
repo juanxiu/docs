@@ -15,5 +15,56 @@ Knowledge base를 활용하는 방법에 대한 기본 지침을 제공해야 �
 
 <img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/agent_builder_add_kb.png" />
 
-3. Agent builder: PortfolioCreator 아래 섹션의 Advanced prompts의 Edit 버튼을 클릭합니다.
+3. Agent builder: PortfolioCreator 아래 섹션의  Orchestration Strategy 의 Edit 버튼을 클릭합니다.
+<img width="811" alt="Image" src="https://github.com/user-attachments/assets/f19feaba-eeac-401b-8f32-6ae1dd1a3ed0" />
 
+4. Orchestration Strategy 의 Orchestration 탭을 선택합니다. 오케스트레이션 Override orchestration template defaults 라디오 버튼을 토글하고 Confirm 합니다. Activate orchestration template가 활성화되어 있는지 확인하십시오.
+<img width="812" alt="Image" src="https://github.com/user-attachments/assets/42e06dcd-752e-4b94-8d4c-9b2f0586b9c2" />
+
+5. Prompt template editor에서 JSON 형태의 템플릿을 확인할 수 있습니다. 40번째 줄의 `#prompt_session_attributes$ 아래에 다음 내용을 복사하여 붙여넣으세요.
+```
+Additionally, use the following examples as references when generating company portfolios and formatted emails:
+
+<portfolio_example>
+
+Here is a portfolio of the top 3 real estate companies:
+Example of a company portfolio:
+
+  1. NextGenPast Residences with revenue of $180,000, expenses of $22,000 and profit of $158,000 employing 260 people.
+  
+  2. GlobalRegional Properties Alliance with revenue of $170,000, expenses of $21,000 and profit of $149,000 employing 11 people.
+  
+  3. InnovativeModernLiving Spaces with revenue of $160,000, expenses of $20,000 and profit of $140,000 employing 10 people.
+
+</portfolio_example>
+
+Here is an example of a formatted email. Double check that the FOMC report is a summary of the knowledge base responses.
+
+<email_format>
+
+Company Portfolio:
+
+  1. NextGenPast Residences with revenue of $180,000, expenses of $22,000 and profit of $158,000 employing 260 people.
+  
+  2. GlobalRegional Properties Alliance with revenue of $170,000, expenses of $21,000 and profit of $149,000 employing 11 people.
+  
+  3. InnovativeModernLiving Spaces with revenue of $160,000, expenses of $20,000 and profit of $140,000 employing 10 people.  
+
+FOMC Report:
+
+  Participants noted that recent indicators pointed to modest growth in spending and production. Nonetheless, job gains had been robust in recent months, and the unemployment rate remained low. Inflation had eased somewhat but remained elevated.
+
+  Participants recognized that Russia’s war against Ukraine was causing tremendous human and economic hardship and was contributing to elevated global uncertainty. Against this background, participants continued to be highly attentive to inflation risks.
+</email_format>
+
+When asked to generate company portfolios or formatted emails, use these examples as a guide for structure and content.
+```
+
+6. 결과는 다음과 유사해야 합니다.
+<img width="812" alt="Image" src="https://github.com/user-attachments/assets/3e956752-0c95-4516-a74c-002165c152d2" />
+
+7. 완료되면 하단으로 스크롤하여 Save and exit를 선택합니다.
+
+8. 이제 Agent builder: PortfolioCreator 내에서 Orchestration Strategy 섹션의 Orchestration이 재정의되었는지 확인하세요. 그리고 상단의 Save and exit 버튼을 클릭합니다.
+
+<img width="812" alt="Image" src="https://github.com/user-attachments/assets/71d06b9c-5dfc-493d-95ee-8e2772c2f1ee" />
