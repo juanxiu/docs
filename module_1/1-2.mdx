@@ -3,9 +3,44 @@ title: '모델 접근권한 부여 및 knowledge base 설정'
 #description: 'Start building awesome documentation in under 5 minutes'
 ---
 
+## 단계 2 : 모델 접근권한 부여 및 knowledge base 생성
+-  Knowledge base를 설정하기 전에 Bedrock에서 에이전트에 필요한 모델에 대한 액세스 권한을 부여해야 합니다.
 
-3. 이제 왼쪽에서 knowledge base를 선택한 다음, 주황색 Create knowledge base 버튼을 선택하여 knowledge base를 생성합니다.
+1. Amazon Bedrock 콘솔로 이동하세요. 화면 왼쪽에서 아래로 스크롤하여 Model access를 선택합니다. Enable specific models 버튼을 선택합니다.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/manage_model_access.png" />
+
+
+2. 베이스 모델로 아래 두 개의 모델을 선택합니다.
+
+- Amazon: Titan Text Embeddings V2
+- Anthropic: Claude 3 Sonnet
+이렇게 하면 필요한 모델에 대한 액세스 권한을 얻게 됩니다. 그런 다음 아래로 스크롤하여 오른쪽 하단에서 Next 버튼을 클릭하고, 최종적으로 Submit 버튼을 클릭합니다.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/access_granted.png" />
+
+
+3. 이제 왼쪽에서 **knowledge base**를 선택한 다음, 주황색 Create knowledge base 버튼을 선택하여 knowledge base를 생성합니다.
 - `Knowledge Base with vector store` 로 생성해주세요. 
-<img width="1481" alt="Image" src="https://github.com/user-attachments/assets/cd1fc6d9-2dd8-4dc9-bf7c-2c4b7c4ccd54" />
+<img width="1481" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/kb+create.png" />
 
-4. 기본 이름을 사용하거나 직접 이름을 입력합니다. 그런 다음 화면 오른쪽 하단의 Next 버튼을 선택하세요. (Data source로 Amazon S3를 사용합니다.)
+4. 기본 이름을 사용하거나 직접 이름을 입력합니다. 그런 다음 화면 오른쪽 하단의 Next 버튼을 선택하세요. (Data source로 Amazon S3를 사용합니다.) 
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/provide_kb_details.png" />
+
+
+5. `knowledgebase-bedrock-agent-{alias}` S3 버킷을 이 knowledge base의 data source로 선택합니다.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/configure_data_source.png" />
+
+
+6. 임베딩 모델로는 Titan Text Embeddings v2를 선택하세요. 다른 옵션은 기본값으로 두고 아래로 스크롤하여 Next를 선택하세요.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/vector_store_config.png" />
+
+
+7. 마지막 스탭에서 작업한 내용을 검토한 후 Create Knowledge base을 선택하세요.
+<Note>
+데이터 소스의 동기화가 완료될때까지 기다린 뒤, 다음 단계로 진행해주시기 바랍니다.
+</Note>
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/preparing_vector_database.png" />
