@@ -10,11 +10,11 @@ title: 'S3 Bucket 생성'
 ### 도메인 데이터 버킷
 
 1. Amazon S3 콘솔로 이동하여 S3 버킷을 생성합니다. 이 S3 버킷은 도메인 데이터를 저장하는 데 사용됩니다. S3 버킷 이름을 `knowledgebase-bedrock-agent-{alias}`로 지정하세요. 나머지 설정은 기본 설정을 유지합니다. 이 워크샵 전체에서 `{alias}`를 적당한 값으로 변경하는 것을 잊지 마세요.
-<img src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/bucket_create.gif" width="50%"/>
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/bucket_create.gif" />
 
-<anchor>
+<Note>
     이 워크샵 전체에서 {alias}를 적당한 값으로 변경하는 것을 잊지 마세요.
-</anchor>
+</Note>
 
 2. 다음으로, 도메인 데이터를 다운로드합니다. [여기](https://github.com/build-on-aws/bedrock-agents-streamlit/tree/main/S3docs)에서 PDF 파일을 다운로드하세요.
 
@@ -35,9 +35,7 @@ title: 'S3 Bucket 생성'
 ### 아티팩트 버킷
 1. 아티팩트를 저장할 다른 S3 버킷을 생성하세요. 버킷명을, `artifacts-bedrock-agent-creator-{alias}`으로 생성합니다.
 그런 다음 [여기](https://github.com/build-on-aws/bedrock-agents-streamlit/blob/main/ActionSchema.json)에서 API 스키마 파일을 다운로드하세요.
-<a href="https://ibb.co/KYCM0Zq">
-    <img src="https://i.ibb.co/rgnC7P6/2025-03-27-7-08-12.png" alt="2025-03-27-7-08-12" border="0">
-</a>
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/download_api_schema.png" />
 
 2. 다운로드 받은 아티팩트 파일을 S3 버킷 artifacts-bedrock-agent-creator-{alias}로 업로드하세요.
 
@@ -54,6 +52,4 @@ title: 'S3 Bucket 생성'
 `/sendEmail`
 
 업로드가 완료되면 .json 문서를 선택하고 열어 내용을 검토하세요.
-<a href="https://ibb.co/qL1Kc0fX">
-    <img src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/loaded_artifact.png" border="0">
-</a>
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/loaded_artifact.png" />

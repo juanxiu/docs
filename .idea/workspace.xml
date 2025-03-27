@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2893c996-669a-4ee9-8aca-c5bb9ae71856" name="Changes" comment="chore. 1-1 이미지 주소 수정">
+      <change beforePath="$PROJECT_DIR$/module_1/1-1.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/module_1/1-1.mdx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "juanxiu"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/juanxiu/docs.git",
+    "accountId": "1f3c0156-19df-4aba-93cb-d06e28d284fe"
+  }
+}]]></component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2utMHvEXKlXm5bWE1xIAubCVegp" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/yeonsookim/docs",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/introduction" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2893c996-669a-4ee9-8aca-c5bb9ae71856" name="Changes" comment="" />
+      <created>1743063332482</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1743063332482</updated>
+    </task>
+    <task id="LOCAL-00001" summary="feat. intro title">
+      <option name="closed" value="true" />
+      <created>1743063923993</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1743063923993</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat. 초기 세팅">
+      <option name="closed" value="true" />
+      <created>1743066272825</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1743066272825</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat. json">
+      <option name="closed" value="true" />
+      <created>1743066837133</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1743066837133</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore. json">
+      <option name="closed" value="true" />
+      <created>1743066927030</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1743066927030</updated>
+    </task>
+    <task id="LOCAL-00005" summary="chore. json 수정">
+      <option name="closed" value="true" />
+      <created>1743066980494</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1743066980494</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore. json 다시">
+      <option name="closed" value="true" />
+      <created>1743067128451</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1743067128451</updated>
+    </task>
+    <task id="LOCAL-00007" summary="chore. json 다시">
+      <option name="closed" value="true" />
+      <created>1743067173848</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1743067173848</updated>
+    </task>
+    <task id="LOCAL-00008" summary="chore. 초기 세팅 다시">
+      <option name="closed" value="true" />
+      <created>1743068245937</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1743068245937</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat. 1-1">
+      <option name="closed" value="true" />
+      <created>1743069625705</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1743069625705</updated>
+    </task>
+    <task id="LOCAL-00010" summary="chore. 1-1">
+      <option name="closed" value="true" />
+      <created>1743070315630</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1743070315630</updated>
+    </task>
+    <task id="LOCAL-00011" summary="chore. 1-1 이미지 수정">
+      <option name="closed" value="true" />
+      <created>1743071352415</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1743071352415</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore. 1-1 이미지 주소 수정">
+      <option name="closed" value="true" />
+      <created>1743071723917</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1743071723917</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat. intro title" />
+    <MESSAGE value="feat. 초기 세팅" />
+    <MESSAGE value="feat. json" />
+    <MESSAGE value="chore. json" />
+    <MESSAGE value="chore. json 수정" />
+    <MESSAGE value="chore. json 다시" />
+    <MESSAGE value="chore. 초기 세팅 다시" />
+    <MESSAGE value="feat. 1-1" />
+    <MESSAGE value="chore. 1-1" />
+    <MESSAGE value="chore. 1-1 이미지 수정" />
+    <MESSAGE value="chore. 1-1 이미지 주소 수정" />
+    <option name="LAST_COMMIT_MESSAGE" value="chore. 1-1 이미지 주소 수정" />
+  </component>
+</project>
