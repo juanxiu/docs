@@ -14,7 +14,8 @@
         "group": "Gen AI workshop 소개",
         "pages": [
           "introduction/readme",
-          "introduction/genai_workshop"
+          "introduction/genai_workshop",
+          "introduction/login"
         ]
       },
       {

@@ -1,71 +1,29 @@
 ---
 title: Amazon Bedrock Agent를 이용하여 Application 구축하기
-description: "Welcome to the home of your new documentation"
+# description: "Welcome to the home of your new documentation"
 ---
 
-<img
-  className="block dark:hidden"
-  src="/images/hero-light.png"
-  alt="Hero Light"
-/>
-<img
-  className="hidden dark:block"
-  src="/images/hero-dark.png"
-  alt="Hero Dark"
-/>
+## 워크숍 소개
 
-## Setting up
+이 워크숍에서는 Amazon Bedrock에서 에이전트를 사용할 애플리케이션의 설정 프로세스를 자세히 설명합니다.
+여기에는 S3 버킷, 지식 베이스, 액션 그룹, Lambda 함수 및 Cloud9 환경 설정이 포함됩니다. 사용자 인터페이스에는 Streamlit 프레임워크를 사용할 것입니다.
+에이전트는 특정 매개변수에 따라 최고 수익 기업 포트폴리오를 동적으로 생성하고 연방 공개시장위원회 보고서에 대한 Q&A 기능을 제공하도록 설계되었습니다.
+이 워크숍에서는 이메일 전송 방법도 포함되어 있지만 활성화되지는 않습니다.
 
-The first step to world-class documentation is setting up your editing environments.
+Level : 300
+예상 소요 시간 : 2시간
+사용리전 : us-west-2
 
-<CardGroup cols={2}>
-  <Card
-    title="Edit Your Docs"
-    icon="pen-to-square"
-    href="https://mintlify.com/docs/quickstart"
-  >
-    Get your docs set up locally for easy development
-  </Card>
-  <Card
-    title="Preview Changes"
-    icon="image"
-    href="https://mintlify.com/docs/development"
-  >
-    Preview your changes before you push to make sure they're perfect
-  </Card>
-</CardGroup>
+##  워크숍 구조 
+이 워크숍은 총 6개의 모듈로 구성됩니다.
+- Amaazon S3 버킷 설정
+- AWS Lambda 함수 설정
+- Amazon Bedrock 에이전트 및 작업 그룹 설정
+- Amazon Bedrock 에이전트로 지식 베이스 설정
+- 구성 테스트
+- Cloud9 IDE 설정
 
-## Make it yours
+## Architecture
 
-Update your docs to your brand and add valuable content for the best user conversion.
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/diagram.jpg?Key-Pair-Id=K36Q2WVO3JP7QD&Policy=eyJTdGF0ZW1lbnQiOlt7IlJlc291cmNlIjoiaHR0cHM6Ly9zdGF0aWMudXMtZWFzdC0xLnByb2Qud29ya3Nob3BzLmF3cy84NGZjM2M4Zi1mNjA0LTRhNTItYjEwOC0xZTRkZGIyZTlmZDEvKiIsIkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTc0MzY4MjYyOH19fV19&Signature=bZ9wfXz3B04CMEomoNK8A99Bu4YpFoqSfB0IZG7i8jh5HyCsRaysLolVOMNGu7faraFUoi-PImuGAqYAdzNkNZb1o9BxgaBQnTL15EFNIfXaeQnRsGRF0lKgtlnLy3AyepE7qwXqtyNsVpRB-LjafBLKb4fZUvGFctzW0KGurpKuuVxz3Ff97jxqaGP2R%7E9YH6MzUjNxx%7EDPBlZsZAsZvhmT46Sp%7En55ywGkAGkqecGsuf3vrjDJNjAHVj2GCU3jGjn3g0u%7EKaplqprUw-MTR%7ERwzISebrIFNMw2N9EFUx%7EENsWuQmdG5JxD6irzhQGS3H8CHwpcp2nGncEi%7E78C7A__" />
 
-<CardGroup cols={2}>
-  <Card
-    title="Customize Style"
-    icon="palette"
-    href="https://mintlify.com/docs/settings/global"
-  >
-    Customize your docs to your company's colors and brands
-  </Card>
-  <Card
-    title="Reference APIs"
-    icon="code"
-    href="https://mintlify.com/docs/api-playground/openapi"
-  >
-    Automatically generate endpoints from an OpenAPI spec
-  </Card>
-  <Card
-    title="Add Components"
-    icon="screwdriver-wrench"
-    href="https://mintlify.com/docs/content/components/accordions"
-  >
-    Build interactive features and designs to guide your users
-  </Card>
-  <Card
-    title="Get Inspiration"
-    icon="stars"
-    href="https://mintlify.com/customers"
-  >
-    Check out our showcase of our favorite documentation
-  </Card>
-</CardGroup>

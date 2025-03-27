@@ -6,6 +6,7 @@ title: 'Streamlit 앱 설정 및 실행'
 ## 단계 9 : 앱 업로드 및 실행
 
 1. Streamlit 앱 ZIP 파일을 얻으세요:
+- [여기](https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/bedrock-agents-streamlit-main+2.zip)에서 에서 프로젝트의 zip 파일을 다운로드하세요.
 
 2. Cloud9에 업로드:
 - Cloud9 환경에서 ZIP 파일을 업로드합니다.
@@ -30,7 +31,13 @@ cd ~/environment/bedrock-agents-streamlit-main/streamlet_app
 6. 업데이트 구성 (매우 중요):
 - InvokeAgent.py 파일을 엽니다.
 - agentId 및 agentAliasId 변수를 적절한 값으로 업데이트한 후 저장합니다.
-    - agentId 및 agentAliasId 변수는 Bedrock > Agents> 만들어둔 agent의 id와 아래로 스크롤해서 Alias 탭에 있는 id 복붙하세요. 
+    - agentId는 Bedrock > Agents> 에서 만들어둔 agent의 id를 찾을 수 있습니다. 
+    - agentAliasId 는 아래로 스크롤해서 Alias 탭에 있는 id 를 찾을 수 있습니다. 
+
+<img width="1481" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/id.png" />
+
+<img width="1481" alt="Image" src="    https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/alias.png" />
+
 
 - 다른 지역을 선호하는 경우 InvokeAgent.py 파일의 코드 라인 22에서 region을 업데이트하세요.
 - File -> Save All으로 이동하여 모든 변경 사항을 저장하세요.
@@ -39,12 +46,14 @@ cd ~/environment/bedrock-agents-streamlit-main/streamlet_app
 
 
 7. app.py 코드 수정
+- app.py 에 들어가서 아래와 같이 코드를 수정해주세요. 
 ```
  human_image = Image.open('/home/ubuntu/environment/bedrock-agents-streamlit-main/streamlit_app/human_face.png')
  robot_image =Image.open('/home/ubuntu/environment/bedrock-agents-streamlit-main/streamlit_app/robot_face.jpg')
 
 ```
-<img width="1105" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/%E1%84%89%E1%85%B3%E1%84%8F%E1%85%B3%E1%84%85%E1%85%B5%E1%86%AB%E1%84%89%E1%85%A3%E1%86%BA+2025-03-27+%E1%84%8B%E1%85%A9%E1%84%92%E1%85%AE+3.01.48.png" />
+
+<img width="1481" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/apppy.png" />
 
 8. Streamlit 설치:
 - 다음 명령을 실행하여 필요한 모든 종속성을 설치하십시오.
@@ -60,9 +69,18 @@ pip install streamlit boto3 pandas
   streamlit run app.py --server.address=0.0.0.0 --server.port=8080
 
 ```
-- Streamlit이 앱을 시작하고 상단 Cloud9 IDE 내 Preview를 선택한 다음 Preview Running Application을 선택하면 앱을 볼 수 있습니다.
+- Streamlit이 앱을 시작하고 상단 Cloud9 IDE 내 Preview를 선택한 다음 **Preview Running Application**을 선택하면 앱을 볼 수 있습니다.
 
 <img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/preview_btn.png" />
+
+<Note>
+만약 **Preview Running Application** 가 안된다면, 사파리의 경우, 설정에서 크로스 추적 방지를 체크 표시 해제해주세요. 
+
+<img width="500" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/%E1%84%89%E1%85%A5%E1%86%AF%E1%84%8C%E1%85%A5%E1%86%BC.png" />
+
+<img width="1481" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/%E1%84%8F%E1%85%B3%E1%84%85%E1%85%A9%E1%84%89%E1%85%B3.png" />
+
+</Note>
 
 10. 앱이 실행되면 제공된 샘플 프롬프트 중 일부를 테스트해 보세요.
 > 첫 번째 시도에서 오류가 발생하면 프롬프트를 다시 실행하세요. 오류가 지속되면 구성을 확인하십시오.
