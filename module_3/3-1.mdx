@@ -6,16 +6,21 @@ title: 'Amazon Bedrock 에이전트 설정'
 1. Bedrock 콘솔의 왼쪽 메뉴에서 Builder tools 하위 메뉴 중 Agents를 선택한 다음, Create Agent를 클릭하세요.
 2. 에이전트 이름을 PortfolioCreator로 입력하고 Create 버튼을 클릭하세요.
 
-https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/create_agent.png
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/create_agent.png" />
+
 
 3. Edit in Agent Builder 버튼을 클릭한 다음, Anthropic: Claude 3 Sonnet 모델을 선택하세요. 그런 다음 프롬프트를 만들어 에이전트의 작동 규칙을 정의하는 지침을 추가하세요.
 
 아래 프롬프트에서는 모델이 도구를 사용하여 질문에 답변하는 방식에 대한 구체적인 지침을 제공합니다.
 
 아래 세부 사항을 복사한 다음 에이전트 지침(Instructions for the Agent)에 붙여 넣은 후, 상단에 Save 버튼을 눌러주세요.
-`You are an investment analyst who creates portfolios of companies based on the number of companies, and industry in the {question}. An example of a portfolio looks like this template {portfolio_example}. You also research companies, and summarize documents. When requested, you format emails like this template {email_format}, then use the provided tools to send an email that has the company portfolio created, and summary of the FOMC report searched.`
+```
+You are an investment analyst who creates portfolios of companies based on the number of companies, and industry in the {question}. An example of a portfolio looks like this template {portfolio_example}. You also research companies, and summarize documents. When requested, you format emails like this template {email_format}, then use the provided tools to send an email that has the company portfolio created, and summary of the FOMC report searched.
 
-https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/agent_builder_agent_details.png
+```
+
+<img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/agent_builder_agent_details.png" />
+
 
 4. Agent builder: PortfolioCreator 페이지의 Action groups 섹션에서 Add 버튼을 눌러 Action group을 생성합니다. Action group의 이름을 PortfolioCreator-actions로 설정합니다. 그리고 Description에는 Used to create investment company portfolios and Q&A를 입력합니다.
 5. Action group type 섹션에서 Define with API schemas를 선택합니다.

@@ -2,3 +2,68 @@
 title: 'Streamlit 앱 설정 및 실행'
 # description: 'Start building awesome documentation in under 5 minutes'
 ---
+
+##단계 9 : 앱 업로드 및 실행
+
+1. Streamlit 앱 ZIP 파일을 얻으세요:
+
+2. Cloud9에 업로드:
+- Cloud9 환경에서 ZIP 파일을 업로드합니다.
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/upload_file_cloud9.png" />
+
+
+3. 다음 단계로 이동하기 전에 프로젝트 업로드가 완료되었는지 확인하세요.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/load_wait.png" />
+
+
+4. 파일 압축을 풀기:
+- 내용을 추출하려면 다음 명령을 사용하십시오.
+
+5. Streamlit_App 폴더로 이동합니다:
+Streamlit 앱이 포함된 디렉터리로 변경합니다. 다음 명령을 사용하십시오.
+
+```
+cd ~/environment/bedrock-agents-streamlit-main/streamlet_app
+```
+
+6. 업데이트 구성 (매우 중요):
+- InvokeAgent.py 파일을 엽니다.
+- agentId 및 agentAliasId 변수를 적절한 값으로 업데이트한 후 저장합니다.
+    - agentId 및 agentAliasId 변수는 Bedrock > Agents> 만들어둔 agent의 id와 아래로 스크롤해서 Alias 탭에 있는 id 복붙하세요. 
+
+- 다른 지역을 선호하는 경우 InvokeAgent.py 파일의 코드 라인 22에서 region을 업데이트하세요.
+- File -> Save All으로 이동하여 모든 변경 사항을 저장하세요.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/update_agentId_and_alias.png" />
+
+
+7. app.py 코드 수정
+```
+ human_image = Image.open('/home/ubuntu/environment/bedrock-agents-streamlit-main/streamlit_app/human_face.png')
+ robot_image =Image.open('/home/ubuntu/environment/bedrock-agents-streamlit-main/streamlit_app/robot_face.jpg')
+
+```
+8. Streamlit 설치:
+- 다음 명령을 실행하여 필요한 모든 종속성을 설치하십시오.
+```
+
+pip install streamlit boto3 pandas
+```
+> 이러한 패키지를 설치하는 중에 오류가 발생하면 각 패키지를 별도로 설치하세요.
+
+9. Streamlit 앱 실행:
+- 아래 명령어를 입력
+```
+  streamlit run app.py --server.address=0.0.0.0 --server.port=8080
+
+```
+- Streamlit이 앱을 시작하고 상단 Cloud9 IDE 내 Preview를 선택한 다음 Preview Running Application을 선택하면 앱을 볼 수 있습니다.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/preview_btn.png" />
+
+10. 앱이 실행되면 제공된 샘플 프롬프트 중 일부를 테스트해 보세요.
+> 첫 번째 시도에서 오류가 발생하면 프롬프트를 다시 실행하세요. 오류가 지속되면 구성을 확인하십시오.
+
+<img width="1481" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/running_app.png" />
+
