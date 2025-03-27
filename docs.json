@@ -38,27 +38,27 @@
         ]
       },
       {
-        "group": "Amazon Bedrock의 에이전트와 기술 자료 동기화",
+        "group": "4. Amazon Bedrock의 에이전트와 기술 자료 동기화",
         "pages": [
           "module_4/4-1",
           "module_4/4-2"
         ]
       },
       {
-        "group": "설정 테스트",
+        "group": "5. 설정 테스트",
         "pages": [
           "module_5/5-1"
         ]
       },
       {
-        "group": "Cloud9 환경 셋업",
+        "group": "6. Cloud9 환경 셋업",
         "pages": [
           "module_6/6-1",
           "module_6/6-2"
         ]
       },
       {
-        "group": "마무리",
+        "group": "7. 마무리",
         "pages": [
           "wrap_up",
           "reference"
