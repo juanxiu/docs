@@ -2,13 +2,40 @@
 title: '설정 테스트'
 # description: 'Start building awesome documentation in under 5 minutes'
 ---
+## 단계 7 : 설정 테스트
+### Knowledge Base 테스트
+1. Amazon Bedrock 콘솔에 있는 Builder tools 탭에서 Knowledge base를 선택한 다음 생성한 KB를 선택합니다. 데이터 소스 섹션까지 아래로 스크롤하고 동기화(Sync) 버튼을 선택했는지 확인하세요.
+<img width="776" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/sync_kb.png" />
 
+
+2. 동기화를 마치고 위에 Test 버튼을 누르면 오른쪽에 모델을 선택해야 하는 사용자 인터페이스가 표시됩니다. Anthropic: Claude 3 Sonnet 모델을 선택한 다음 Apply을 선택합니다.
+<img width="776" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/test_kb_select_model.png" />
+
+
+3. 이제 제공된 사용자 인터페이스에 프롬프트를 입력할 수 있습니다.
+<img width="776" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/test_kb_prompt.png" />
+
+
+4. 테스트 프롬프트:
+
+(한글)
+- 2023년 1월 금융시장 발전과 공개시장 운영에 대해 알려줘.
+- 인플레이션이나 물가 상승에 대해 알아야 할 중요한 정보를 제공해줘.
+- 경제 및 금융 상황에 대한 직원 검토(Staff Review)에 대해 알려줘.
+<Note>
+Data source로 제공한 문서가 영문이기 때문에 검색결과가 표시되지 않을 수 있습니다. 결과가 표시되지 않을 때는 영문 프롬프트로 테스트 해주시기 바랍니다.
+</Note>
+
+(영문)
+- Give me a summary of financial market developments and open market operations in January 2023
+- Provide information about inflation or rising prices
+- Tell me about the Staff Review of the Economic & Financial Situation
 
 ### 에이전트 테스트
 5. 생성한 에이전트 콘솔 페이지로 이동한 다음, 상단 Test 버튼을 클릭합니다. (에이전트가 준비(Prepared) 되었는지 확인하세요.)
-<img width="776" alt="Image" src="https://github.com/user-attachments/assets/eb28931b-2871-408a-86c6-a91f23669eb9" />
+<img width="776" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/prepare+%E1%84%92%E1%85%AA%E1%86%AF%E1%84%89%E1%85%A5%E1%86%BC%E1%84%92%E1%85%AA.png" />
 - prepare 버튼을 눌러 활성화해주세요 
-<img width="776" alt="Image" src="https://github.com/user-attachments/assets/edc0fcec-b592-4f16-ad5f-20f46e1bfe27" />
+<img width="776" alt="Image" src="https://genai-yeonsoo.s3.ap-northeast-2.amazonaws.com/prepared+%E1%84%92%E1%85%AA%E1%86%A8%E1%84%8B%E1%85%B5%E1%86%AB.png" />
 - prepare 되었는지 확인하세요. 
 <img width="1445" alt="Image" src="https://static.us-east-1.prod.workshops.aws/public/84fc3c8f-f604-4a52-b108-1e4ddb2e9fd1/static/agent_test.png" />
 - 이제  테스트할 수 있습니다. 
